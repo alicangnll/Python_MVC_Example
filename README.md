@@ -7,6 +7,9 @@
 ## Kurulum
 <pre>python3 -m pip install -r requirements.txt</pre>
 
+## Database oluşturma
+<p>Database oluşturmak için öncelikle proje klasörünün içerisinde <b>"python3 -m flask db init"</b> komutuyla migrate klasörlerini oluşturuyoruz. Ardından <b>"python3 -m flask db migrate"</b> ile DB dosyasını oluşturuyoruz. Tüm bu işlemlerden sonra ise <b>"python3 -m flask db upgrade"</b> ile DB içerisine tablolar insert edilir.</p>
+
 ## Dosya Yapısı
 <pre>
 proje/
@@ -41,8 +44,6 @@ main/
 └── listuser (Tablodaki kullanıcıları listeler)
 </pre>
 
-## Database oluşturma
-<p>Database oluşturmak için öncelikle proje klasörünün içerisinde <b>"python3 -m flask db init"</b> komutuyla migrate klasörlerini oluşturuyoruz. Ardından <b>"python3 -m flask db migrate"</b> ile DB dosyasını oluşturuyoruz. Tüm bu işlemlerden sonra ise <b>"python3 -m flask db upgrade"</b> ile DB içerisine tablolar insert edilir.</p>
 
 ## PyCache dosyalarını silme kodu
 <pre>
