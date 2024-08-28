@@ -3,7 +3,6 @@
 # Bu alandan modele sorgular gönderilecek ve alınan cevaplar route alanında belirtilen linkte sergilenecek
 
 from models.DBModel import User, db
-from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify, render_template
 
 def controller_index():
