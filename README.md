@@ -23,17 +23,17 @@ proje/
 ├── instance/
 |   └── data.db (DB oluşturulduktan sonra gelecek)
 |
-├── routes/
+├── routes/ (Yönlendiriciler. URL kısmını belirtenler. Örneğin alicangonullu.com/konu vb)
 |   └── Route.py
 |
-├── models/
+├── models/ (Veritaban yapısını içeren alan)
 |   └── DBModel.py
 |
-├── controllers/
+├── controllers/ (Tüm yapıyı UI ile bağlayan alan. Core alanı)
 |   └── Controller.py
 |
-├── app.py
-└── config.py
+├── app.py (Uygulamanın başlatıcısı)
+└── config.py (Uygulama ayarlayıcı)
 </pre>
 
 ## Uygulama İçeriği
