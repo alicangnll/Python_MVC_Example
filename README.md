@@ -5,12 +5,10 @@
 <p>
 
 ## Kurulum
-<code>
-    python3 -m pip install -r requirements.txt
-</code>
+<pre>python3 -m pip install -r requirements.txt</pre>
 
 ## Dosya Yapısı
-<code>
+<pre>
 proje/
 |
 ├── templates/
@@ -33,23 +31,21 @@ proje/
 |
 ├── app.py
 └── config.py
-</code>
+</pre>
 
 ## Uygulama İçeriği
-<code>
+<pre>
 main/
 |
 ├── iexampleuser (Example userları insert eder)
 └── listuser (Tablodaki kullanıcıları listeler)
-</code>
+</pre>
 
 ## Database oluşturma
-<p>
-    Database oluşturmak için öncelikle proje klasörünün içerisinde <b>"python3 -m flask db init"</b> komutuyla migrate klasörlerini oluşturuyoruz. Ardından <b>"python3 -m flask db migrate"</b> ile DB dosyasını oluşturuyoruz. Tüm bu işlemlerden sonra ise <b>"python3 -m flask db upgrade"</b> ile DB içerisine tablolar insert edilir.
-</p>
+<p>Database oluşturmak için öncelikle proje klasörünün içerisinde <b>"python3 -m flask db init"</b> komutuyla migrate klasörlerini oluşturuyoruz. Ardından <b>"python3 -m flask db migrate"</b> ile DB dosyasını oluşturuyoruz. Tüm bu işlemlerden sonra ise <b>"python3 -m flask db upgrade"</b> ile DB içerisine tablolar insert edilir.</p>
 
 ## PyCache dosyalarını silme kodu
-<code>
-    python3 -Bc "import pathlib; [p.unlink() for p in pathlib.Path('.').rglob('*.py[co]')]"
-    python3 -Bc "import pathlib; [p.rmdir() for p in pathlib.Path('.').rglob('__pycache__')]"
-</code>
+<pre>
+python3 -Bc "import pathlib; [p.unlink() for p in pathlib.Path('.').rglob('*.py[co]')]"<br>
+python3 -Bc "import pathlib; [p.rmdir() for p in pathlib.Path('.').rglob('__pycache__')]"
+</pre>
