@@ -36,6 +36,9 @@ proje/
 └── config.py (Uygulama ayarlayıcı)
 </pre>
 
+## Yapı Görsellemesi
+![Yapı](https://github.com/user-attachments/assets/aec9ab12-c120-4554-ab13-683d8d73dfc0)
+
 ## Uygulama İçeriği
 <pre>
 main/
